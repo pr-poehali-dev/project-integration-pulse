@@ -64,33 +64,12 @@ const Index = () => {
               </div>
             </div>
 
-            {/* Hero сетка изображений */}
-            <div className="lg:col-span-4 grid grid-cols-2 gap-2 auto-rows-fr h-fit self-center">
-              <Card className="aspect-square bg-card overflow-hidden rounded-lg">
-                <img
-                  src="https://cdn.poehali.dev/templates/lp/acoustic-guitar-player-in-plant-filled-cafe.jpg"
-                  alt="Рок-выступление"
-                  className="w-full h-full object-cover"
-                />
-              </Card>
-              <Card className="aspect-square bg-primary/20 overflow-hidden rounded-lg">
-                <img
-                  src="https://cdn.poehali.dev/templates/lp/indie-folk-singer-with-acoustic-guitar-in-intimate.jpg"
-                  alt="Инди-артист"
-                  className="w-full h-full object-cover"
-                />
-              </Card>
-              <Card className="aspect-square bg-accent/20 overflow-hidden rounded-lg">
+            {/* Hero изображение */}
+            <div className="lg:col-span-4 h-fit self-center">
+              <Card className="overflow-hidden rounded-lg">
                 <img
                   src="https://cdn.poehali.dev/projects/0396a746-4718-45f3-bb1d-5bc07f2afb5a/bucket/b117c54b-18d5-43bc-a8dd-05302ad94a9e.png"
                   alt="v_kazin"
-                  className="w-full h-full object-cover object-top"
-                />
-              </Card>
-              <Card className="aspect-square bg-card overflow-hidden rounded-lg">
-                <img
-                  src="https://cdn.poehali.dev/templates/lp/intimate-music-venue-with-plants-and-warm-lighting.jpg"
-                  alt="Атмосфера бара"
                   className="w-full h-full object-cover"
                 />
               </Card>
