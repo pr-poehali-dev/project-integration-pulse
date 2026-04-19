@@ -67,7 +67,7 @@ const Index = () => {
             <div>
               <h4 className="font-semibold mb-4">Почта</h4>
               <div className="space-y-2 text-muted-foreground">
-                <p>info@v-kazin.ru</p>
+                <p>ext-vkazin@samokat.ru</p>
               </div>
             </div>
           </div>
