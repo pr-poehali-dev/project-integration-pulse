@@ -31,10 +31,7 @@ const Index = () => {
             <div className="lg:col-span-8 flex flex-col justify-center">
               <div className="space-y-8">
                 <div className="space-y-4">
-                  <Badge variant="secondary" className="w-fit">
-                    <Icon name="Music" size={12} className="mr-1" />
-                    Рок · Поп · Инди · Электроника
-                  </Badge>
+
                   <h1 className="text-6xl lg:text-8xl font-bold tracking-tight text-balance">
                     Живая музыка
                     <span className="text-primary block">каждую ночь</span>
