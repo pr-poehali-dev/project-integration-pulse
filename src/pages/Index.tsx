@@ -26,23 +26,12 @@ const Index = () => {
       </header>
 
       {/* Hero секция */}
-      <section className="pt-0 pb-16">
+      <section className="pb-16">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 min-h-[80vh]">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             {/* Основной контент Hero */}
-            <div className="lg:col-span-8 flex flex-col justify-center">
+            <div className="lg:col-span-8 flex flex-col justify-center pt-12">
               <div className="space-y-8">
-                <div className="space-y-4">
-
-                  <h1 className="text-6xl lg:text-8xl font-bold tracking-tight text-balance">
-                    Живая музыка
-                    <span className="text-primary block">каждую ночь</span>
-                  </h1>
-                  <p className="text-xl text-muted-foreground max-w-2xl text-pretty">
-                    STATIC NOISE — бар для тех, кто живёт музыкой. Четыре жанра, сотни артистов, один адрес.
-                    Рок-риффы сменяются электронными битами, инди-меланхолия — поп-эйфорией.
-                  </p>
-                </div>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button size="lg" className="text-lg px-8">
                     Забронировать столик
@@ -54,8 +43,8 @@ const Index = () => {
               </div>
             </div>
 
-            {/* Hero изображение */}
-            <div className="lg:col-span-4 h-fit self-center">
+            {/* Hero изображение — вплотную к шапке */}
+            <div className="lg:col-span-4 -mt-1">
               <Card className="overflow-hidden rounded-lg">
                 <img
                   src="https://cdn.poehali.dev/projects/0396a746-4718-45f3-bb1d-5bc07f2afb5a/bucket/6105c9b5-9264-4951-a29d-e81684faa964.png"
