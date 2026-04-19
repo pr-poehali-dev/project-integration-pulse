@@ -12,15 +12,6 @@ const Index = () => {
           <div className="flex items-center justify-between">
             <div className="text-2xl font-bold tracking-tight">V_<span className="text-primary">KAZIN</span></div>
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
-                О баре
-              </a>
-              <a href="#events" className="text-muted-foreground hover:text-foreground transition-colors">
-                Афиша
-              </a>
-              <a href="#menu" className="text-muted-foreground hover:text-foreground transition-colors">
-                Меню
-              </a>
               <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
                 Контакты
               </a>
