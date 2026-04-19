@@ -10,7 +10,7 @@ const Index = () => {
       <header className="w-full">
         {/* Название сайта */}
         <div className="w-full bg-background px-6 py-3 flex items-center justify-between border-b border-border">
-          <div className="text-2xl font-bold tracking-tight">V_<span className="text-primary">KAZIN</span></div>
+          <div className="text-2xl font-bold tracking-tight">v_<span className="text-primary">kazin</span></div>
         </div>
         {/* Полная картинка-шапка */}
         <div className="w-full">
@@ -52,7 +52,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
-              <div className="text-2xl font-bold mb-4">V_<span className="text-primary">KAZIN</span></div>
+              <div className="text-2xl font-bold mb-4">v_<span className="text-primary">kazin</span></div>
 
             </div>
             <div>
@@ -69,7 +69,7 @@ const Index = () => {
             </div>
           </div>
           <div className="border-t border-border mt-12 pt-8 text-center text-muted-foreground">
-            <p>&copy; 2025 V_KAZIN. Все права защищены.</p>
+            <p>&copy; 2025 v_kazin. Все права защищены.</p>
           </div>
         </div>
       </footer>
