@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Music, Leaf, MapPin, Clock, Users } from "lucide-react";
+import Icon from "@/components/ui/icon";
 
 const Index = () => {
   return (
@@ -10,10 +10,10 @@ const Index = () => {
       <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <div className="text-2xl font-bold tracking-tight">ЗЕЛЁНЫЙ ЗВУК</div>
+            <div className="text-2xl font-bold tracking-tight">STATIC<span className="text-primary">NOISE</span></div>
             <div className="hidden md:flex items-center space-x-8">
               <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
-                О нас
+                О баре
               </a>
               <a href="#events" className="text-muted-foreground hover:text-foreground transition-colors">
                 Афиша
@@ -41,16 +41,16 @@ const Index = () => {
               <div className="space-y-8">
                 <div className="space-y-4">
                   <Badge variant="secondary" className="w-fit">
-                    <Music className="w-3 h-3 mr-1" />
-                    Живая музыка и растения
+                    <Icon name="Music" size={12} className="mr-1" />
+                    Рок · Поп · Инди · Электроника
                   </Badge>
                   <h1 className="text-6xl lg:text-8xl font-bold tracking-tight text-balance">
-                    Где музыка
-                    <span className="text-primary block">растёт вместе с нами</span>
+                    Живая музыка
+                    <span className="text-primary block">каждую ночь</span>
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-2xl text-pretty">
-                    Уникальное сочетание живых акустических выступлений и ботанической красоты. Наслаждайтесь
-                    авторским кофе в окружении пышной зелени, открывая для себя новых артистов.
+                    STATIC NOISE — бар для тех, кто живёт музыкой. Четыре жанра, сотни артистов, один адрес.
+                    Рок-риффы сменяются электронными битами, инди-меланхолия — поп-эйфорией.
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4">
@@ -69,28 +69,28 @@ const Index = () => {
               <Card className="aspect-square bg-card overflow-hidden rounded-lg">
                 <img
                   src="https://cdn.poehali.dev/templates/lp/acoustic-guitar-player-in-plant-filled-cafe.jpg"
-                  alt="Акустическое выступление"
+                  alt="Рок-выступление"
                   className="w-full h-full object-cover"
                 />
               </Card>
               <Card className="aspect-square bg-primary/20 overflow-hidden rounded-lg">
                 <img
-                  src="https://cdn.poehali.dev/templates/lp/lush-green-plants-and-hanging-gardens-in-cafe.jpg"
-                  alt="Атмосфера с растениями"
+                  src="https://cdn.poehali.dev/templates/lp/indie-folk-singer-with-acoustic-guitar-in-intimate.jpg"
+                  alt="Инди-артист"
                   className="w-full h-full object-cover"
                 />
               </Card>
               <Card className="aspect-square bg-accent/20 overflow-hidden rounded-lg">
                 <img
-                  src="https://cdn.poehali.dev/templates/lp/artisan-coffee-and-pastries-on-wooden-table.jpg"
-                  alt="Авторский кофе"
+                  src="https://cdn.poehali.dev/templates/lp/electronic-ambient-musician-with-synthesizers-and-.jpg"
+                  alt="Электронная сцена"
                   className="w-full h-full object-cover"
                 />
               </Card>
               <Card className="aspect-square bg-card overflow-hidden rounded-lg">
                 <img
                   src="https://cdn.poehali.dev/templates/lp/intimate-music-venue-with-plants-and-warm-lighting.jpg"
-                  alt="Камерная площадка"
+                  alt="Атмосфера бара"
                   className="w-full h-full object-cover"
                 />
               </Card>
@@ -99,44 +99,54 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Секция преимуществ */}
+      {/* Секция жанров */}
       <section className="py-20 bg-secondary/50">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">АТМОСФЕРА ЗЕЛЁНОГО ЗВУКА</h2>
+            <h2 className="text-4xl font-bold mb-4">ЧЕТЫРЕ ЖАНРА — ОДИН БАР</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-balance">
-              Наш подход, где музыка, природа и сообщество соединяются в единое целое
+              Каждый вечер — новый звук. Мы не выбираем между жанрами, мы соединяем их
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="p-8 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <Card className="p-8 text-center border-primary/30 hover:border-primary transition-colors">
               <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Music className="w-8 h-8 text-primary" />
+                <Icon name="Zap" size={32} className="text-primary" />
               </div>
-              <h3 className="text-2xl font-bold mb-4">1. Открывай</h3>
-              <p className="text-muted-foreground">
-                Мы помогаем открывать новые звуки и артистов в камерной обстановке, где каждая нота находит отклик.
+              <h3 className="text-xl font-bold mb-3">РОК</h3>
+              <p className="text-muted-foreground text-sm">
+                Тяжёлые риффы и живая энергия — от классики до пост-рока
               </p>
             </Card>
 
-            <Card className="p-8 text-center">
+            <Card className="p-8 text-center border-accent/30 hover:border-accent transition-colors">
               <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Leaf className="w-8 h-8 text-accent" />
+                <Icon name="Star" size={32} className="text-accent" />
               </div>
-              <h3 className="text-2xl font-bold mb-4">2. Соединяйся</h3>
-              <p className="text-muted-foreground">
-                Соединяйся с природой и сообществом в нашем ботаническом оазисе, созданном для осознанного слушания.
+              <h3 className="text-xl font-bold mb-3">ПОП</h3>
+              <p className="text-muted-foreground text-sm">
+                Яркие мелодии и цепкие хиты — поп без компромиссов
               </p>
             </Card>
 
-            <Card className="p-8 text-center">
+            <Card className="p-8 text-center border-primary/30 hover:border-primary transition-colors">
               <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Users className="w-8 h-8 text-primary" />
+                <Icon name="Headphones" size={32} className="text-primary" />
               </div>
-              <h3 className="text-2xl font-bold mb-4">3. Расти</h3>
-              <p className="text-muted-foreground">
-                Наблюдай, как артисты и сообщество расцветают в пространстве, которое питает творчество и подлинные связи.
+              <h3 className="text-xl font-bold mb-3">ИНДИ</h3>
+              <p className="text-muted-foreground text-sm">
+                Авторская музыка, независимые артисты и честные тексты
+              </p>
+            </Card>
+
+            <Card className="p-8 text-center border-accent/30 hover:border-accent transition-colors">
+              <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Icon name="Activity" size={32} className="text-accent" />
+              </div>
+              <h3 className="text-xl font-bold mb-3">ЭЛЕКТРОНИКА</h3>
+              <p className="text-muted-foreground text-sm">
+                Синтезаторы, биты и живые сеты — электронная сцена в действии
               </p>
             </Card>
           </div>
@@ -155,23 +165,24 @@ const Index = () => {
             <Card className="overflow-hidden group cursor-pointer hover:scale-[1.02] transition-transform">
               <div className="aspect-video bg-primary/20 relative overflow-hidden">
                 <img
-                  src="https://cdn.poehali.dev/templates/lp/indie-folk-singer-with-acoustic-guitar-in-intimate.jpg"
-                  alt="Выступление Анны Лесной"
+                  src="https://cdn.poehali.dev/templates/lp/acoustic-guitar-player-in-plant-filled-cafe.jpg"
+                  alt="The Hollow Bones"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform"
                 />
                 <Badge className="absolute top-4 left-4">Сегодня</Badge>
+                <Badge variant="outline" className="absolute top-4 right-4 bg-background/70">РОК</Badge>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Анна Лесная</h3>
-                <p className="text-muted-foreground mb-4">Инди-фолк с ботаническими историями</p>
+                <h3 className="text-xl font-bold mb-2">The Hollow Bones</h3>
+                <p className="text-muted-foreground mb-4">Пост-рок · гитарные пейзажи и динамика</p>
                 <div className="flex items-center gap-4 text-sm text-muted-foreground">
                   <div className="flex items-center gap-1">
-                    <Clock className="w-4 h-4" />
-                    20:00
+                    <Icon name="Clock" size={16} />
+                    21:00
                   </div>
                   <div className="flex items-center gap-1">
-                    <Users className="w-4 h-4" />
-                    25 мест
+                    <Icon name="Users" size={16} />
+                    40 мест
                   </div>
                 </div>
               </div>
@@ -180,25 +191,24 @@ const Index = () => {
             <Card className="overflow-hidden group cursor-pointer hover:scale-[1.02] transition-transform">
               <div className="aspect-video bg-accent/20 relative overflow-hidden">
                 <img
-                  src="https://cdn.poehali.dev/templates/lp/jazz-trio-performing-in-plant-filled-venue.jpg"
-                  alt="Трио Оранжерея"
+                  src="https://cdn.poehali.dev/templates/lp/indie-folk-singer-with-acoustic-guitar-in-intimate.jpg"
+                  alt="Мира Соло"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform"
                 />
-                <Badge className="absolute top-4 left-4" variant="secondary">
-                  Завтра
-                </Badge>
+                <Badge className="absolute top-4 left-4" variant="secondary">Завтра</Badge>
+                <Badge variant="outline" className="absolute top-4 right-4 bg-background/70">ИНДИ-ПОП</Badge>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Трио «Оранжерея»</h3>
-                <p className="text-muted-foreground mb-4">Джаз-фьюжн со звуками природы</p>
+                <h3 className="text-xl font-bold mb-2">Мира Соло</h3>
+                <p className="text-muted-foreground mb-4">Инди-поп · авторские тексты о городе</p>
                 <div className="flex items-center gap-4 text-sm text-muted-foreground">
                   <div className="flex items-center gap-1">
-                    <Clock className="w-4 h-4" />
-                    19:30
+                    <Icon name="Clock" size={16} />
+                    20:30
                   </div>
                   <div className="flex items-center gap-1">
-                    <Users className="w-4 h-4" />
-                    30 мест
+                    <Icon name="Users" size={16} />
+                    50 мест
                   </div>
                 </div>
               </div>
@@ -208,24 +218,25 @@ const Index = () => {
               <div className="aspect-video bg-primary/20 relative overflow-hidden">
                 <img
                   src="https://cdn.poehali.dev/templates/lp/electronic-ambient-musician-with-synthesizers-and-.jpg"
-                  alt="Мох и Схемы"
+                  alt="VOLT/AGE"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform"
                 />
                 <Badge className="absolute top-4 left-4" variant="outline">
                   В эти выходные
                 </Badge>
+                <Badge variant="outline" className="absolute top-4 right-4 bg-background/70">ЭЛЕКТРО</Badge>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Мох и Схемы</h3>
-                <p className="text-muted-foreground mb-4">Эмбиент-электроника с датчиками растений</p>
+                <h3 className="text-xl font-bold mb-2">VOLT/AGE</h3>
+                <p className="text-muted-foreground mb-4">Электроника · живой сет с синтезаторами</p>
                 <div className="flex items-center gap-4 text-sm text-muted-foreground">
                   <div className="flex items-center gap-1">
-                    <Clock className="w-4 h-4" />
-                    21:00
+                    <Icon name="Clock" size={16} />
+                    22:00
                   </div>
                   <div className="flex items-center gap-1">
-                    <Users className="w-4 h-4" />
-                    40 мест
+                    <Icon name="Users" size={16} />
+                    60 мест
                   </div>
                 </div>
               </div>
@@ -239,34 +250,33 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-4xl font-bold mb-6 text-balance">Выращиваем звук в живых пространствах</h2>
+              <h2 className="text-4xl font-bold mb-6 text-balance">Место, где жанры не делят на «серьёзные» и «не очень»</h2>
               <div className="space-y-6 text-lg text-muted-foreground">
                 <p>
-                  «Зелёный Звук» — это больше, чем площадка. Это экосистема, где музыка и природа создают
-                  симбиотический опыт. Наше пространство украшают более 200 тщательно подобранных растений,
-                  которые реагируют на звуковые частоты, создавая живой, дышащий фон для камерных выступлений.
+                  STATIC NOISE — это бар, где рок-гитарист и диджей делят одну сцену, а публика не выбирает
+                  между танцами и вдумчивым слушанием. Мы верим: хорошая музыка не знает жанровых границ.
                 </p>
                 <p>
-                  Каждый уголок рассказывает историю роста — от кофе с ферм, принадлежащих музыкантам, до
-                  акустического дизайна, который позволяет музыке и природе расцветать вместе.
+                  Каждую неделю — новые артисты, открытые микрофоны, специальные тематические вечера.
+                  Авторские коктейли, живая энергия и звук, который ощущается физически.
                 </p>
               </div>
               <div className="mt-8 grid grid-cols-2 gap-8">
                 <div>
-                  <div className="text-3xl font-bold text-primary">200+</div>
-                  <div className="text-muted-foreground">Живых растений</div>
+                  <div className="text-3xl font-bold text-primary">100+</div>
+                  <div className="text-muted-foreground">Артистов в месяц</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-accent">50+</div>
-                  <div className="text-muted-foreground">Артистов в месяц</div>
+                  <div className="text-3xl font-bold text-accent">4</div>
+                  <div className="text-muted-foreground">Жанра на одной сцене</div>
                 </div>
               </div>
             </div>
             <div className="relative">
               <Card className="aspect-[4/5] overflow-hidden">
                 <img
-                  src="https://cdn.poehali.dev/templates/lp/lush-indoor-garden-cafe-with-hanging-plants-and-na.jpg"
-                  alt="Интерьер Зелёного Звука"
+                  src="https://cdn.poehali.dev/templates/lp/intimate-music-venue-with-plants-and-warm-lighting.jpg"
+                  alt="Интерьер STATIC NOISE"
                   className="w-full h-full object-cover"
                 />
               </Card>
@@ -278,17 +288,17 @@ const Index = () => {
       {/* CTA секция */}
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-5xl font-bold mb-6 text-balance">Готовы испытать музыку, которая растёт?</h2>
+          <h2 className="text-5xl font-bold mb-6 text-balance">Следующий концерт — уже сегодня вечером</h2>
           <p className="text-xl text-muted-foreground mb-8 text-balance">
-            Присоединяйтесь к нашему сообществу любителей музыки и ценителей растений. Забронируйте место
-            для незабываемого вечера, где звук и природа объединяются.
+            Не ждите подходящего момента — он уже наступил. Забронируйте место и погрузитесь
+            в атмосферу живой музыки, которую невозможно воспроизвести дома.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="text-lg px-8">
               Забронировать столик
             </Button>
             <Button variant="outline" size="lg" className="text-lg px-8 bg-transparent">
-              <MapPin className="w-4 h-4 mr-2" />
+              <Icon name="MapPin" size={16} className="mr-2" />
               Как добраться
             </Button>
           </div>
@@ -300,10 +310,9 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
-              <div className="text-2xl font-bold mb-4">ЗЕЛЁНЫЙ ЗВУК</div>
+              <div className="text-2xl font-bold mb-4">STATIC<span className="text-primary">NOISE</span></div>
               <p className="text-muted-foreground mb-6 max-w-md">
-                Где музыка и природа создают незабываемые впечатления. Приходите на камерные выступления
-                в наш ботанический оазис.
+                Бар с живой музыкой для тех, кто слышит разницу. Рок, поп, инди и электроника — каждый вечер.
               </p>
               <div className="flex gap-4">
                 <Button variant="outline" size="sm">
@@ -322,22 +331,22 @@ const Index = () => {
               <div className="space-y-2 text-muted-foreground">
                 <p>ул. Садовая, 123</p>
                 <p>Музыкальный квартал</p>
-                <p>Ежедневно 7:00 - 23:00</p>
+                <p>Ежедневно 18:00 — 03:00</p>
                 <p>+7 (495) 123-45-67</p>
               </div>
             </div>
             <div>
-              <h4 className="font-semibold mb-4">Услуги</h4>
+              <h4 className="font-semibold mb-4">Программа</h4>
               <div className="space-y-2 text-muted-foreground">
-                <p>Живая музыка</p>
-                <p>Мастер-классы</p>
-                <p>Частные мероприятия</p>
-                <p>Резиденции артистов</p>
+                <p>Живые концерты</p>
+                <p>Открытый микрофон</p>
+                <p>DJ-сеты</p>
+                <p>Частные вечеринки</p>
               </div>
             </div>
           </div>
           <div className="border-t border-border mt-12 pt-8 text-center text-muted-foreground">
-            <p>&copy; 2025 Зелёный Звук. Все права защищены.</p>
+            <p>&copy; 2025 STATIC NOISE. Все права защищены.</p>
           </div>
         </div>
       </footer>
