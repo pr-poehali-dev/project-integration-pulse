@@ -68,7 +68,7 @@ const Index = () => {
             <div className="lg:col-span-4 h-fit self-center">
               <Card className="overflow-hidden rounded-lg">
                 <img
-                  src="https://cdn.poehali.dev/projects/0396a746-4718-45f3-bb1d-5bc07f2afb5a/bucket/b117c54b-18d5-43bc-a8dd-05302ad94a9e.png"
+                  src="https://cdn.poehali.dev/projects/0396a746-4718-45f3-bb1d-5bc07f2afb5a/bucket/6105c9b5-9264-4951-a29d-e81684faa964.png"
                   alt="v_kazin"
                   className="w-full h-full object-cover"
                 />
