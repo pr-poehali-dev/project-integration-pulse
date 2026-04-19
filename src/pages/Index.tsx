@@ -32,14 +32,7 @@ const Index = () => {
             {/* Основной контент Hero */}
             <div className="lg:col-span-8 flex flex-col justify-center pt-12">
               <div className="space-y-8">
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button size="lg" className="text-lg px-8">
-                    Забронировать столик
-                  </Button>
-                  <Button variant="outline" size="lg" className="text-lg px-8 bg-transparent">
-                    Сегодняшнее шоу
-                  </Button>
-                </div>
+                <h2 className="text-4xl font-bold tracking-widest text-primary">ТРЕКИ :</h2>
               </div>
             </div>
 
