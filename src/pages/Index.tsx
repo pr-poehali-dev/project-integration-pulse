@@ -56,20 +56,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
               <div className="text-2xl font-bold mb-4">V_<span className="text-primary">KAZIN</span></div>
-              <p className="text-muted-foreground mb-6 max-w-md">
-                Бар с живой музыкой для тех, кто слышит разницу. Рок, поп, инди и электроника — каждый вечер.
-              </p>
-              <div className="flex gap-4">
-                <Button variant="outline" size="sm">
-                  Телеграм
-                </Button>
-                <Button variant="outline" size="sm">
-                  ВКонтакте
-                </Button>
-                <Button variant="outline" size="sm">
-                  Рассылка
-                </Button>
-              </div>
+
             </div>
             <div>
               <h4 className="font-semibold mb-4">Адрес</h4>
