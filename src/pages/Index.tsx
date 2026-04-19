@@ -59,21 +59,15 @@ const Index = () => {
 
             </div>
             <div>
-              <h4 className="font-semibold mb-4">Адрес</h4>
+              <h4 className="font-semibold mb-4">Телефон</h4>
               <div className="space-y-2 text-muted-foreground">
-                <p>ул. Садовая, 123</p>
-                <p>Музыкальный квартал</p>
-                <p>Ежедневно 18:00 — 03:00</p>
                 <p>+7 (495) 123-45-67</p>
               </div>
             </div>
             <div>
-              <h4 className="font-semibold mb-4">Программа</h4>
+              <h4 className="font-semibold mb-4">Почта</h4>
               <div className="space-y-2 text-muted-foreground">
-                <p>Живые концерты</p>
-                <p>Открытый микрофон</p>
-                <p>DJ-сеты</p>
-                <p>Частные вечеринки</p>
+                <p>info@v-kazin.ru</p>
               </div>
             </div>
           </div>
