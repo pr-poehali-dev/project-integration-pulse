@@ -10,7 +10,7 @@ const Index = () => {
       <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <div className="text-2xl font-bold tracking-tight">STATIC<span className="text-primary">NOISE</span></div>
+            <div className="text-2xl font-bold tracking-tight">V_<span className="text-primary">KAZIN</span></div>
             <div className="hidden md:flex items-center space-x-8">
               <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
                 О баре
@@ -310,7 +310,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
-              <div className="text-2xl font-bold mb-4">STATIC<span className="text-primary">NOISE</span></div>
+              <div className="text-2xl font-bold mb-4">V_<span className="text-primary">KAZIN</span></div>
               <p className="text-muted-foreground mb-6 max-w-md">
                 Бар с живой музыкой для тех, кто слышит разницу. Рок, поп, инди и электроника — каждый вечер.
               </p>
@@ -346,7 +346,7 @@ const Index = () => {
             </div>
           </div>
           <div className="border-t border-border mt-12 pt-8 text-center text-muted-foreground">
-            <p>&copy; 2025 STATIC NOISE. Все права защищены.</p>
+            <p>&copy; 2025 V_KAZIN. Все права защищены.</p>
           </div>
         </div>
       </footer>
