@@ -11,9 +11,6 @@ const Index = () => {
         {/* Название сайта */}
         <div className="w-full bg-background px-6 py-3 flex items-center justify-between border-b border-border">
           <div className="text-2xl font-bold tracking-tight">V_<span className="text-primary">KAZIN</span></div>
-          <Button variant="outline" size="sm">
-            Забронировать
-          </Button>
         </div>
         {/* Полная картинка-шапка */}
         <div className="w-full">
