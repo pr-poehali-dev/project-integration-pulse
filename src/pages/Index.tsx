@@ -7,16 +7,15 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Навигация */}
-      <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
-        <div className="max-w-7xl mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <div className="text-2xl font-bold tracking-tight">V_<span className="text-primary">KAZIN</span></div>
-            <div className="hidden md:flex items-center space-x-8">
-              <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
-                Контакты
-              </a>
-            </div>
-            <Button variant="outline" size="sm">
+      <nav className="fixed top-0 w-full z-50">
+        <div className="relative w-full h-20 overflow-hidden">
+          <img
+            src="https://cdn.poehali.dev/projects/0396a746-4718-45f3-bb1d-5bc07f2afb5a/bucket/3df7453c-8c16-4232-9897-bc1f6e564348.png"
+            alt="v_kazin header"
+            className="w-full h-full object-cover object-top"
+          />
+          <div className="absolute inset-0 flex items-center justify-end px-6">
+            <Button variant="outline" size="sm" className="bg-background/30 backdrop-blur-sm border-white/30 text-white hover:bg-background/50">
               Забронировать
             </Button>
           </div>
