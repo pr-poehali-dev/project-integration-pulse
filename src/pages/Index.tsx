@@ -82,9 +82,9 @@ const Index = () => {
               </Card>
               <Card className="aspect-square bg-accent/20 overflow-hidden rounded-lg">
                 <img
-                  src="https://cdn.poehali.dev/templates/lp/electronic-ambient-musician-with-synthesizers-and-.jpg"
-                  alt="Электронная сцена"
-                  className="w-full h-full object-cover"
+                  src="https://cdn.poehali.dev/projects/0396a746-4718-45f3-bb1d-5bc07f2afb5a/bucket/b117c54b-18d5-43bc-a8dd-05302ad94a9e.png"
+                  alt="v_kazin"
+                  className="w-full h-full object-cover object-top"
                 />
               </Card>
               <Card className="aspect-square bg-card overflow-hidden rounded-lg">
@@ -217,8 +217,8 @@ const Index = () => {
             <Card className="overflow-hidden group cursor-pointer hover:scale-[1.02] transition-transform">
               <div className="aspect-video bg-primary/20 relative overflow-hidden">
                 <img
-                  src="https://cdn.poehali.dev/templates/lp/electronic-ambient-musician-with-synthesizers-and-.jpg"
-                  alt="VOLT/AGE"
+                  src="https://cdn.poehali.dev/projects/0396a746-4718-45f3-bb1d-5bc07f2afb5a/bucket/b117c54b-18d5-43bc-a8dd-05302ad94a9e.png"
+                  alt="v_kazin"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform"
                 />
                 <Badge className="absolute top-4 left-4" variant="outline">
@@ -227,7 +227,7 @@ const Index = () => {
                 <Badge variant="outline" className="absolute top-4 right-4 bg-background/70">ЭЛЕКТРО</Badge>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">VOLT/AGE</h3>
+                <h3 className="text-xl font-bold mb-2">v_kazin</h3>
                 <p className="text-muted-foreground mb-4">Электроника · живой сет с синтезаторами</p>
                 <div className="flex items-center gap-4 text-sm text-muted-foreground">
                   <div className="flex items-center gap-1">
