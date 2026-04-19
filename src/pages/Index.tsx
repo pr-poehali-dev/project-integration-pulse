@@ -6,24 +6,27 @@ import Icon from "@/components/ui/icon";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      {/* Навигация */}
-      <nav className="fixed top-0 w-full z-50">
-        <div className="relative w-full h-20 overflow-hidden">
+      {/* Шапка */}
+      <header className="w-full">
+        {/* Название сайта */}
+        <div className="w-full bg-background px-6 py-3 flex items-center justify-between border-b border-border">
+          <div className="text-2xl font-bold tracking-tight">V_<span className="text-primary">KAZIN</span></div>
+          <Button variant="outline" size="sm">
+            Забронировать
+          </Button>
+        </div>
+        {/* Полная картинка-шапка */}
+        <div className="w-full">
           <img
             src="https://cdn.poehali.dev/projects/0396a746-4718-45f3-bb1d-5bc07f2afb5a/bucket/3df7453c-8c16-4232-9897-bc1f6e564348.png"
             alt="v_kazin header"
-            className="w-full h-full object-cover object-top"
+            className="w-full h-auto"
           />
-          <div className="absolute inset-0 flex items-center justify-end px-6">
-            <Button variant="outline" size="sm" className="bg-background/30 backdrop-blur-sm border-white/30 text-white hover:bg-background/50">
-              Забронировать
-            </Button>
-          </div>
         </div>
-      </nav>
+      </header>
 
       {/* Hero секция */}
-      <section className="pt-20 pb-16">
+      <section className="pt-0 pb-16">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 min-h-[80vh]">
             {/* Основной контент Hero */}
