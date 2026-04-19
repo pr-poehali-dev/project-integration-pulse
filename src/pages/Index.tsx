@@ -43,8 +43,8 @@ const Index = () => {
               </div>
             </div>
 
-            {/* Hero изображение — вплотную к шапке */}
-            <div className="lg:col-span-4 -mt-1">
+            {/* Hero изображение */}
+            <div className="lg:col-span-4 mt-5">
               <Card className="overflow-hidden rounded-lg">
                 <img
                   src="https://cdn.poehali.dev/projects/0396a746-4718-45f3-bb1d-5bc07f2afb5a/bucket/6105c9b5-9264-4951-a29d-e81684faa964.png"
